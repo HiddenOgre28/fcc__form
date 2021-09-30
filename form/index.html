@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC Survey Form</title>
+    <link rel="stylesheet" href="C:\Users\christopher\Desktop\code\scss\main.css">
+</head>
+<body>
+    <main class="main">
+        <div class="title">
+            <h1 id="title" class="title__h1">Front-End Development Application</h1>
+            <p id="description" class="title__description">Fill out this application so we can see if you're elegible for a free full front-end development course.</p>
+        </div>
+            
+        <div class="form">
+            <form id="survey-form">
+                <div class="form__field">
+                    <label id="name-label" class="name__label" for="name">Name:</label></br>
+                    <input class="form___field__input" 
+                    type="text" 
+                    id="name" 
+                    name="Full name" 
+                    placeholder="John Smith" 
+                    required>
+                </div>
+                
+                <div class="form__field">
+                    <label id="email-label" class="email__label" for="email">Email:</label></br>
+                    <input class="form___field__input" 
+                    type="email" 
+                    id="email" 
+                    name="Email"  
+                    placeholder="example@mail.com" 
+                    required>
+                    </br>
+                </div>
+                
+                <div class="form__field">
+                    <label id="number-label" class="number__label" for="number">Phone number:</label></br>
+                    <input class="form___field__input"
+                    type="number" 
+                    id="number" 
+                    name="number" 
+                    pattern="[0-9]{11,14}"
+                    placeholder="(555) 555-1234" 
+                    min="1000000000"
+                    max="9999999999"
+                    required>
+                    </br>
+                </div>
+                
+                <div class="form__field">
+                    <label class="list__label" for="dropdown">What's your occupation?</label>
+                    <select id="dropdown" name="plans" required>
+                        <option value="" disable selected>Select an option</option>
+                        <option value="student">Student</option>
+                        <option value="employed">Empoyled</option>
+                        <option value="employed">Unempoyled</option>
+                        <option value="retired">Retired</option>
+                    </select>
+                </div>
+                
+                <div class="form__field" required>
+                    Pick all the courses you would like to take:
+                    <div>
+                        <label class="checkbox__label" for="html">HTML</label>
+                        <input type="checkbox" id="html" name="html" value="HTML">
+                    </div>
+                    <div>
+                        <label class="checkbox__label" for="css">CSS</label>
+                        <input type="checkbox" id="css" name="css" value="CSS">
+                    </div>
+                    <div>
+                        <label class="checkbox__label" for="javascript">JavaScript</label>
+                        <input type="checkbox" id="javascript" name="javascript" value="JavaScript">
+                    </div>
+                </div>
+                
+                <div class="form__field">
+                    What's your current level in these languages?
+                    <div>
+                        <label class="newbie" for="proficient">Newbie</label>
+                        <input type="radio" id="newbie" name="radio" value="newbie" checked>
+                    </div>
+                    <div>
+                        <label class="basic" for="basic">Basic</label>
+                        <input type="radio" id="basic" name="radio" value="basic">
+                    </div>
+                    <div>
+                        <label class="intermediate" for="intermediate">Intermediate</label>
+                        <input type="radio" id="intermediate" name="radio" value="intermediate">
+                    </div>
+                </div>
+                
+                <div class="form__field">
+                    <label class="opinion__label">Do you have any questions regarding the project?</label>
+                    </br>
+                    <textarea id="opinion-box" name="opinion-box" rowns="40" cols="50" placeholder="Please leave us your opinion."></textarea>
+                </div>
+                
+                <div class="form__field">
+                    <input type="submit" id="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    
+        <footer class="f">
+            <p class="f__credits">Designed and coded by <a class="f__link" href="#">Yasmin Ledesma</a>.</p>
+        </footer>
+    </main>
+</body>
+</html>

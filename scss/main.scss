@@ -1,0 +1,77 @@
+/* Variables and everything else*/
+$primary-color: rgb(13, 12, 29);
+$secondary-color: rgb(22, 27, 51);
+$terciary-color: rgb(71, 73, 115);
+
+$text-color: rgb(255, 255, 255);
+
+$link--color: rgb(241, 218, 196);
+$link--hover: rgb(166, 156, 172);
+$link--visited: rgb(166, 156, 172);
+
+@mixin flexCenter($direction, $justify, $align) {
+	display: flex;
+	justify-content: $justify;
+	align-items: $align;
+	flex-direction: $direction;
+}
+
+/* Mobile Layout */
+/* Base CSS */
+body {
+	margin: 0;
+	padding: 0;
+	background: $primary-color;
+	color: $text-color;
+	font-size: 100%;
+	font-family: 'Consolas', 'Courier New', monospace;
+	}
+
+a {
+    color: $link--color;
+}
+
+a:hover {
+    color: $link--hover;
+}
+
+a:visited {
+    color: $link--visited;
+}
+
+main {
+	margin: 2% auto 2% auto;
+	padding: auto;
+	background: $terciary-color;
+	width: 90%;
+	@include flexCenter(column, center, center)
+}
+
+/* Layout */
+.title {
+	margin: auto;
+	padding: auto;
+	background: $secondary-color;
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+#survey-form {
+	width: 100%;
+	height: auto;
+	padding: 1%;
+	margin: 1% auto 1% auto;
+	font-family: Helvetica, Arial, sans-serif;
+	text-align: center;
+}
+
+footer {
+	@extend .title
+}
+
+
+input[type="text"], input[type="email"], input[type="number"] {
+	 width: 60%;
+	 height: auto;
+ }
