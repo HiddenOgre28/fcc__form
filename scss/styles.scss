@@ -111,13 +111,9 @@ a:visited {
 	border-radius: .5rem;
 }
 
-.formContainer__form__field__Container {
-	@include flexCenter(row, center, center);
-	gap: 15%;
-}
-
 .formContainer__form__field__name {
 	float: right;
+	text-align: left;
 	font-size: 1.2rem;
 	line-height: 1;
 }
@@ -146,4 +142,13 @@ a:visited {
 /* Footer modules */
 .footer__credits{
 	font-family: $primary-font;
+}
+
+// Desktop Layout //
+
+@media screen and (min-device-width: 768px) {
+	.formContainer__form__field__Container {
+		@include flexCenter(row, center, center);
+		gap: 15%;
+	}
 }
