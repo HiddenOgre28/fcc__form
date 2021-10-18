@@ -1,0 +1,154 @@
+/* Variables */
+/* Reusable code */
+/* Base */
+body {
+  margin: 0;
+  max-width: 100%;
+  background: #0d0c1d;
+  color: white;
+  font-family: "Consolas", "Courier New", monospace;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+p {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+a {
+  color: #f1dac4;
+}
+
+a:hover {
+  color: #a69cac;
+}
+
+a:visited {
+  color: #a69cac;
+}
+
+/* Layout */
+.main {
+  margin: 2% auto 2% auto;
+  background: #474973;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header {
+  background-color: #161b33;
+  width: 100%;
+  text-align: center;
+}
+
+.formContainer {
+  margin: 1% auto;
+  width: 70%;
+}
+
+.footer {
+  margin: auto;
+  padding: auto;
+  background: #161b33;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+/* Modules */
+/* Header modules */
+.header__title__h1 {
+  padding: 2% 0 0 0;
+  font-size: 2.2rem;
+}
+
+.header__title__description {
+  padding: 0 0 1.5% 0;
+  font-size: 1.1rem;
+}
+
+/* Form modules */
+.formContainer__form__field {
+  margin: .9%;
+}
+
+.formContainer__form__field__label {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+}
+
+.formContainer__form___field__textInput, .formContainer__form___field__commentInput {
+  margin: 1% auto;
+  width: 60vw;
+  height: 4vh;
+  border-radius: .5rem;
+}
+
+.formContainer__form__field__dropdown {
+  width: 60.5vw;
+  height: 5vh;
+  margin: 1% auto;
+  border-radius: .5rem;
+}
+
+.formContainer__form__field__Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 15%;
+}
+
+.formContainer__form__field__name {
+  float: right;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.formContainer__form__field__Container__option {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.formContainer__form___field__commentInput {
+  height: 20vh;
+}
+
+.formContainer__form___field__submit {
+  margin: auto;
+  width: 25vw;
+  height: 6vh;
+  position: relative;
+  left: 28%;
+  font-weight: bold;
+  border-radius: .5rem;
+  background-color: #161b33;
+  color: white;
+}
+
+/* Footer modules */
+.footer__credits {
+  font-family: "Consolas", "Courier New", monospace;
+}
+/*# sourceMappingURL=styles.css.map */

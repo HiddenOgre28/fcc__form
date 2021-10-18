@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC Form</title>
+    <link rel="stylesheet" href="..\scss\styles.css">
+</head>
+<body>
+    <main class="main">
+        <div class="header">
+            <h1 id="title" class="header__title__h1">Front-End Web Development Application</h1>
+            <p id="description" class="header__title__description">Fill out this application to see if you're elegible for a free full front-end web development course.</p>
+        </div>
+            
+        <div class="formContainer">
+            <form id="survey-form" class="formContainer__form">
+                <div class="formContainer__form__field">
+                    <label id="name-label" class="formContainer__form__field__label" for="name">Name:</label></br>
+                    <input class="formContainer__form___field__textInput" 
+                    type="text" 
+                    id="name" 
+                    name="Full name" 
+                    placeholder="John Smith" 
+                    required>
+                </div>
+                
+                <div class="formContainer__form__field">
+                    <label id="email-label" class="formContainer__form__field__label" for="email">Email:</label></br>
+                    <input class="formContainer__form___field__textInput" 
+                    type="email" 
+                    id="email" 
+                    name="Email"  
+                    placeholder="example@mail.com" 
+                    required>
+                    </br>
+                </div>
+                
+                <div class="formContainer__form__field">
+                    <label id="number-label" class="formContainer__form__field__label" for="number">Phone number:</label></br>
+                    <input class="formContainer__form___field__textInput"
+                    type="number" 
+                    id="number" 
+                    name="number" 
+                    pattern="[0-9]{11,14}"
+                    placeholder="(555) 555-1234" 
+                    min="1000000000"
+                    max="9999999999"
+                    required>
+                    </br>
+                </div>
+                
+                <div class="formContainer__form__field">
+                    <label class="formContainer__form__field__label" for="dropdown">What's your occupation?</label>
+                    </br>
+                    <select class="formContainer__form__field__dropdown" id="dropdown" name="plans" required>
+                        <option value="" disable selected>Select an option</option>
+                        <option value="student">Student</option>
+                        <option value="employed">Empoyled</option>
+                        <option value="employed">Unempoyled</option>
+                        <option value="retired">Retired</option>
+                    </select>
+                </div>
+                
+                <div class="formContainer__form__field" required>
+                    <p class="formContainer__form__field__label">Pick all the courses you would like to take:</p>
+                    <div class="formContainer__form__field__Container">
+                        <div>
+                            <label class="formContainer__form__field__name" for="html">HTML</label>
+                            <input class="formContainer__form__field__Container__option" type="checkbox" id="html" name="html" value="HTML">
+                        </div>
+                        <div>
+                            <label class="formContainer__form__field__name" for="css">CSS</label>
+                            <input class="formContainer__form__field__Container__option" type="checkbox" id="css" name="css" value="CSS">
+                        </div>
+                        <div>
+                            <label class="formContainer__form__field__name" for="javascript">JavaScript</label>
+                            <input class="formContainer__form__field__Container__option" type="checkbox" id="javascript" name="javascript" value="JavaScript">
+                        </div>
+                    </div>
+                </div>
+                </br>
+                <div class="formContainer__form__field">
+                    <p class="formContainer__form__field__label">What's your current level in these languages?</p>
+                    <div class="formContainer__form__field__Container">
+                    <div>
+                        <label class="formContainer__form__field__name" for="proficient">Newbie</label>
+                        <input class="formContainer__form__field__Container__option" type="radio" id="newbie" name="radio" value="newbie" checked>
+                    </div>
+                    <div>
+                        <label class="formContainer__form__field__name" for="basic">Basic</label>
+                        <input class="formContainer__form__field__Container__option" type="radio" id="basic" name="radio" value="basic">
+                    </div>
+                    <div>
+                        <label class="formContainer__form__field__name" for="intermediate">Intermediate</label>
+                        <input class="formContainer__form__field__Container__option" type="radio" id="intermediate" name="radio" value="intermediate">
+                    </div>
+                </div>
+                </div>
+                </br>
+                <div class="formContainer__form__field">
+                    <label class="formContainer__form__field__label">Do you have any questions regarding the project?</label>
+                    </br>
+                    <textarea class="formContainer__form___field__commentInput" id="opinion-box" name="opinion-box" rowns="40" cols="50" placeholder="Please leave us your opinion."></textarea>
+                </div>
+                
+                <div class="formContainer__form__field">
+                    <input class="formContainer__form___field__submit" type="button" id="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    
+        <footer class="footer">
+            <p class="footer__credits">Designed and coded by <a class="footer__link" href="#">Yasmin Ledesma</a>.</p>
+        </footer>
+    </main>
+</body>
+</html>

@@ -1,0 +1,149 @@
+/* Variables */
+$primary-color: rgb(13, 12, 29);
+$secondary-color: rgb(22, 27, 51);
+$terciary-color: rgb(71, 73, 115);
+
+$text-color: rgb(255, 255, 255);
+
+$link--color: rgb(241, 218, 196);
+$link--hover: rgb(166, 156, 172);
+$link--visited: rgb(166, 156, 172);
+
+$primary-font: 'Consolas', 'Courier New', monospace;
+$secondary-font: Helvetica, Arial, sans-serif;
+
+/* Reusable code */
+@mixin flexCenter($direction, $justify, $align) {
+	display: flex;
+	justify-content: $justify;
+	align-items: $align;
+	flex-direction: $direction;
+}
+
+/* Base */
+body {
+	margin: 0;
+	max-width: 100%;
+	background: $primary-color;
+	color: $text-color;
+	font-family: $primary-font;
+	box-sizing: border-box;
+}
+
+p {
+	font-family: $secondary-font;
+	font-size: 16px;
+}
+
+a {
+    color: $link--color;
+}
+
+a:hover {
+    color: $link--hover;
+}
+
+a:visited {
+    color: $link--visited;
+}
+
+/* Layout */
+.main {
+	margin: 2% auto 2% auto;
+	background: $terciary-color;
+	width: 90%;
+	@include flexCenter(column, center, center)
+}
+
+.header {
+	background-color: $secondary-color;
+	width: 100%;
+	text-align: center;
+}
+
+.formContainer {
+	margin: 1% auto;
+	width: 70%;
+}
+
+.footer {
+	margin: auto;
+	padding: auto;
+	background: $secondary-color;
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+/* Modules */
+/* Header modules */
+.header__title__h1 {
+	padding: 2% 0 0 0;
+	font-size: 2.2rem;
+}
+
+.header__title__description {
+	padding: 0 0 1.5% 0;
+	font-size: 1.1rem;
+}
+
+/* Form modules */
+.formContainer__form__field {
+	margin: .9%;
+}
+
+.formContainer__form__field__label {
+	font-family: $secondary-font;
+	font-size: 1.2rem;
+}
+
+.formContainer__form___field__textInput {
+	margin: 1% auto;
+	width: 60vw;
+	height: 4vh;
+	border-radius: .5rem;
+}
+
+.formContainer__form__field__dropdown {
+	width: 60.5vw;
+	height: 5vh;
+	margin: 1% auto;
+	border-radius: .5rem;
+}
+
+.formContainer__form__field__Container {
+	@include flexCenter(row, center, center);
+	gap: 15%;
+}
+
+.formContainer__form__field__name {
+	float: right;
+	font-size: 1.2rem;
+	line-height: 1;
+}
+
+.formContainer__form__field__Container__option {
+	font-family: $secondary-font;
+}
+
+.formContainer__form___field__commentInput {
+	@extend .formContainer__form___field__textInput;
+	height: 20vh;
+}
+
+.formContainer__form___field__submit {
+	margin: auto;
+	width: 25vw;
+	height: 6vh;
+	position: relative;
+	left: 28%;
+	font-weight: bold;
+	border-radius: .5rem;
+	background-color: $secondary-color;
+	color: $text-color;
+}
+
+/* Footer modules */
+.footer__credits{
+	font-family: $primary-font;
+}
